@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+        <title>フリーステッチ free stitch</title>
+        
+        <link rel="icon" type="image/png" href="image/favicon.png">
+        
+        <meta name="keywords" content="フリーステッチ,free stitch,ドッグウェア,ドッグフード,キャリーバッグ">
+        
+        <meta name="description" content="より豊かな暮らしを愛犬と！を合言葉にドッググッズブランドのフリーステッチ(free stitch)ではパピーから小型犬、中型犬、大型犬用の首輪やキャリーバッグ、ドッグウェア、ベッド、プレミアムドッグフード、犬用カート、ケージを取揃えて皆様の来店をお待ちしております。">
+        <!--フォント設定-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap" rel="stylesheet">
+    
+        <!--ビューポートの設定-->
+	   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	   <link rel="stylesheet" href="css/style.css" media="screen and (min-width:901px)">
+	   <!--※デフォルトのスタイル(style.css)-->
+
+	   <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width:900px) and (min-width:481px)">
+	   <!--※タブレット用のスタイル(tablet.css)-->
+
+	   <link rel="stylesheet" href="css/smart.css" media="screen and (max-width:480px)">
+	   <!--※スマートフォン用のスタイル(smart.css)-->
+        
+        <!--jquery-->
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/slick.js"></script>
+        
+        <script type="text/javascript">
+            $(function(){
+	           if (window.matchMedia('(max-width: 480px)').matches) {
+		/* ウィンドウサイズ668以下の処理を記述 */
+                   $(function(){
+                        $('.slider').slick({
+                            autoplay:true,
+                            autoplaySpeed: 4000,
+                            infinite: true,
+                            slidesToScroll: 1,
+                            dots: true,
+                            arrows: false,
+                            pauseOnHover: false,
+                        });
+                    });
+	           } else if (window.matchMedia('(max-width:900px)').matches) {
+		/* ウィンドウサイズ900以下の処理を記述 */
+                   $(function(){
+                        $('.slider').slick({
+                            autoplay:true,
+                            autoplaySpeed: 4000,
+                            infinite: true,
+                            slidesToScroll: 1,
+                            dots: true,
+                            arrows: false,
+                            pauseOnHover: false,
+                        });
+                    });
+	           } else if (window.matchMedia('(min-width:901px)').matches) {
+		/* ウィンドウサイズ901以上の処理を記述 */
+                   $(function(){
+                        $('.slider').slick({
+                            autoplay:true,
+                            autoplaySpeed: 4000,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '20%',
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                            pauseOnHover: false,
+                            prevArrow: '<img src="image/btn-main-left.png" class="prev_icon">',
+                            nextArrow:'<img src="image/btn-main-right.png" alt="" class="next_icon">'
+                        });
+                    });
+            }})
+        </script>
+        <script type="text/javascript">
+            $(function(){
+                $('.content:not(.content:first-of-type)').css('display','none');//一番上の要素以外を非表示
+                $('.more').nextAll('.more').css('display','none');//ボタンを非表示
+                $('.more').on('click', function() {
+                    $(this).css('display','none');//押したボタンを非表示
+                    $(this).next('.content').slideDown('fast');
+                    $(this).nextAll('.more:first').css('display','block'); //次のボタンを表示
+                });
+            });
+        </script>
+        
+        <script>
+            $(function() {
+                $(".D").click(function() {
+                $(".E").slideToggle("");
+                });
+            });
+        </script>
+	</head>
+    
+    <body>
+        <section class="smart-nav">
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <!--ここからメニュー-->
+                <div class="menu-content1">
+                    <a class="logo-image" href="index.html"></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="image/h_nav-concept.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="plus" href="#">
+                                <img src="image/h_nav-product.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/h_nav-meetup.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/h_nav-charity.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/h_nav-news.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="plus" href="#">
+                                <img src="image/h_nav-media.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/h_nav-showroom.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="plus" href="#">
+                                <img src="image/h_nav-onlinestore.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--ここまでメニュー-->
+            </div>
+            <div class="smart-logo">
+                <a href="index.html"><img src="image/logo-freestitch.png"></a>
+            </div>
+        </section>
+        <header>
+            <div class="top-logo">
+                <h1><a href="index.html"><img src="image/logo-freestitch.png"></a></h1>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <ul class="drop-down">
+                        <li><a href="#"><img src="image/h_nav-concept.png"></a></li>
+                        <li>
+                            <a class="round_arrow" href="#"><img src="image/h_nav-product.png"></a>
+                            <ul class="sub-menu">
+                                <li class="deco"><a href="#"><img src="image/h_nav-catalogue.png"></a></li>
+                                <li class="deco"><a href="#"><img src="image/h_nav-food.png"></a></li>
+                                <li><a href="#"><img src="image/h_nav-gallery.png"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="image/h_nav-meetup.png"></a></li>
+                        <li><a href="#"><img src="image/h_nav-charity.png"></a></li>
+                        <li><a href="#"><img src="image/h_nav-news.png"></a></li>
+                        <li>
+                            <a class="round_arrow" href="#"><img src="image/h_nav-media.png"></a>
+                        
+                            <ul class="sub-menu">
+                                <li class="deco" ><a href="#"><img src="image/h_nav-blog.png"></a></li>
+                                <li><a href="#"><img src="image/h_nav-oneday.png"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="image/h_nav-showroom.png"></a></li>
+                        <li>
+                            <a class="round_arrow" href="#"><img src="image/h_nav-onlinestore.png"></a>
+                            
+                            <ul class="sub-menu">
+                                <li class="deco"><a href="#"><img src="image/h_nav-japan.png"></a></li>
+                                <li><a href="#"><img src="image/h_nav-overseas.png"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sns-icon">
+                <ul>
+                    <li><a href="#"><img src="image/ico-youtube.png"></a></li>
+                    <li><a href="#"><img src="image/ico-facebook.png"></a></li>
+                    <li><a href="#"><img src="image/ico-instagram.png"></a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="top-image">
+            <ul class="slider">
+                <li><a href="#"><img src="image/brand_main_pctb-3.jpg"></a></li>
+                <li><a href="#"><img src="image/main_img_202011.jpg"></a></li>
+                <li><a href="#"><img src="image/main_img_12.jpg"></a></li>
+                <li><a href="#"><img src="image/main_img_15.jpg"></a></li>
+                <li><a href="#"><img src="image/brand_main_03_pctb.jpg"></a></li>
+            </ul>
+            <div class="filter-left"></div>
+            <div class="filter-right"></div>
+        </section>
+        <main>
+            <section class="information">
+                <div class="content">
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/news_s-1.jpg"></figure>
+                        
+                                <img src="image/h-cat-info.png">
+                                <h2>Notice of Golden Week holidays</h2>
+                                <p>5月3日(火)～5月5日(木)の期間は発送業務を休業させていただきます。</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/brand_news_01-1.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Anti-odor Comfort Collar</h2>
+                                <p>小型犬から大型犬まで使用できるア―ストーンのストライプのカラー</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/brand_news_05.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Striped Cut-and-Sew</h2>
+                                <p>コットン100%のオープンエンド糸を使用し、表面はシャリ感があり、内側はやわらかくサラッとした肌触りが特徴</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/brand_news_01.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Strolling Bag</h2>
+                                <p>お散歩グッズをしっかり収納できるよう設計されたストローリングバッグ。ショルダーベルト付き。</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/19-04_444.jpg"></figure>
+                                <img src="image/h-cat-event.png">
+                                <h2>Meet-up festivals for 2022 Spring/Summer</h2>
+                                <p>2022年春、夏に10犬種にフォーカスしたスペシャルなオフ会を企画しております。</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/fs_0010_444.jpg"></figure>
+                                <img src="image/h-cat-info.png">
+                        
+                                <h2>jingumae Showroom Now Open</h2>
+                                <p>free stitch 神宮前ショールームがオープンしました。</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <img src="image/btn-show_more.png">
+                </div>
+            
+                <div class="content">
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_0650_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Spring Fresh Shampoo for Dogs</h2>
+                                <p>愛犬が草原で自由に、軽やかに駆け回り穏やかでこころが優しく包み込まれる癒しの時間をイメージして精油をブレンドしたシャンプー。</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_1596_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>All-round Care Spray for Cats</h2>
+                                <p>1本で愛猫全身のお手入れから、ペット用品のおそうじまでご使用いただけます。</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_9490_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Oral Care Spray for Pets</h2>
+                                <p>ペットのお口の健康を守る。ペットの口腔環境を清潔に保ち、爽やかな息と健康をサポートします。</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/IMG_2053_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Balcordy Carry Bag</h2>
+                                <p>大人気のボストン型キャリーバッグのバルコディキャリーからカーキ色がリニューアル登場しました。</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_0205_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>SQUARE TOTE</h2>
+                                <p>大人気のfree stitchオリジナルトートキャリーから新色でブラウンが登場しました。</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_9006_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>SQUARE TOTE</h2>
+                                <p>人気のスクエアトートにツートンカラーに新色のブラウンが登場</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <img src="image/btn-show_more.png">
+                </div>
+            
+                <div class="content">
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_8753_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Organic Turtle-neck Knit Jumper</h2>
+                                <p>冬に1枚着せると重宝するオーガニックコットンセーター</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/f15715e408cff4d07a1b3a0f9e1442db.jpg"></figure>
+                                <img src="image/h_nav-catalogue.png">
+                                <h2>2021 AUTUMN/WINTER Collection</h2>
+                                <p>2021年秋冬のカタログが完成いたしました。</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/sp_puppycollar_img.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Reflective Puppy Collar</h2>
+                                <p>プレゼントしているパピーの慣らし用のトレーニング首輪にリフレクティブシリーズが登場しました。</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_0424_s.jpg"></figure>
+                                <img src="image/h-cat-new_item.png">
+                                <h2>Strolling Bag Tarpaulin</h2>
+                                <p>お散歩グッズを便利に収納するのを前提に設計されたドッグウォーキングバッグ</p>
+                            </a>
+                        </div>
+   
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_9619_s.jpg"></figure>
+                                <img src="image/h-cat-info.png">
+                                <h2>Notice of free stitch Office Relocation</h2>
+                                <p>2021年5月24日(月)より本社事務所を移転することになりました。</p>
+                            </a>
+                        </div>
+    
+                        <div class="info-box">
+                            <a href="#">
+                                <figure><img src="image/MG_0690_s.jpg"></figure>
+                                <img src="image/h-cat-info.png">
+                                <h2>Resumption of Business Operations</h2>
+                                <p>新型コロナウイルスの感染拡大を防ぐため在宅勤務を実施しております。</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="event">
+                <h3><img src="image/h-photo_event.png"></h3>
+                <div class="wrap">
+                    <a href="#">
+                        <ul class="slideshow">
+                            <li class="dog-image"><img src="image/dogs19.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs18.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs17.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs16.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs15.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs14.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs13.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs12.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs11.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs10.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs9.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs8.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs7.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs6.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs5.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs4.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs3.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs2.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs1.jpg"></li>
+                        </ul>
+                        <ul class="slideshow">
+                            <li class="dog-image"><img src="image/dogs19.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs18.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs17.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs16.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs15.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs14.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs13.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs12.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs11.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs10.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs9.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs8.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs7.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs6.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs5.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs4.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs3.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs2.jpg"></li>
+                            <li class="dog-image"><img src="image/dogs1.jpg"></li>
+                        </ul>
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="page-top">
+                <a href="#"><img src="image/btn-backtopagetop.png"></a>
+            </div>
+            
+            
+            
+            
+            <div class="smart-footer">
+                <div class="D"><img src="image/btn-menu.png"></div>
+                <div class="E">
+                    <ul>
+                        <li><a href="index.html"><img src="image/f_nav-top.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-media.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-recruit.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-company.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-contact.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-link.png"></a></li>
+                        <li><a href="#"><img src="image/f_nav-sitemap.png"></a></li>
+                    </ul>             
+                </div>
+                <div class="smart-snsicon">
+                    <ul>
+                        <li><a href="#"><img src="image/ico-youtube.png"></a></li>
+                        <li><a href="#"><img src="image/ico-facebook.png"></a></li>
+                        <li><a href="#"><img src="image/ico-instagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html"><img src="image/f_nav-top.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-media.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-recruit.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-company.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-contact.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-link.png"></a></li>
+                    <li><a href="#"><img src="image/f_nav-sitemap.png"></a></li>
+                </ul>
+                <div class="footer-sns-icon">
+                    <ul>
+                        <li><a href="#"><img src="image/ico-youtube.png"></a></li>
+                        <li><a href="#"><img src="image/ico-facebook.png"></a></li>
+                        <li><a href="#"><img src="image/ico-instagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">
+                    <img src="image/copyright.png">
+            </div>
+        </footer>
+    </body>
+</html>
+
